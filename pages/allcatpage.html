@@ -1,0 +1,204 @@
+<div class="main">
+  <h3 class="text-center lead" id="catText">Категории</h3>
+
+  <div class="main-cats">
+    <li class="">
+      <a href="#" class="Button-App Button-Html" id="htmlPage" title="HTML">
+        <i class="fas fa-code"></i>
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="Button-App Button-Css" id="cssPage" title="CSS">
+        <i class="fab fa-css3-alt"></i>
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="Button-App Button-Js" id="jsPage" title="JavaScript">
+        <i class="fab fa-js-square"></i>
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="Button-App Button-Php" id="phpPage" title="PHP">
+        <i class="fab fa-php"></i>
+      </a>
+    </li>
+    <li class="">
+      <a
+        href="#"
+        class="Button-App Button-JQuery"
+        id="JQueryPage"
+        title="jQuery"
+      >
+        <img src="img/jquery-10.png" alt="" height="90" />
+      </a>
+    </li>
+    <li class="">
+      <a href="#" class="Button-App Button-Vue" id="vuePage" title="Vue">
+        <i class="fab fa-vuejs"></i>
+      </a>
+    </li>
+
+    <li class="">
+      <a href="#" class="Button-App Button-React" id="reactPage" title="React">
+        <i class="fab fa-react"></i>
+      </a>
+    </li>
+    <li class="">
+      <a
+        href="#"
+        class="Button-App Button-Electron"
+        id="electronPage"
+        title="Electron"
+      >
+        <img src="img/electron-67.png" height="90" alt="" />
+      </a>
+    </li>
+    <li class="">
+      <a
+        href="#"
+        class="Button-App Button-LangSug"
+        id="openLangSugest"
+        title="Предложить язык"
+      >
+        <i class="fas fa-location-arrow"></i>
+      </a>
+    </li>
+  </div>
+  <script src="js/redirects.js"></script>
+</div>
+<style>
+  .Version-App {
+    margin-left: 11px;
+    font-size: 10px;
+  }
+
+  .Version-App > a > p {
+    text-decoration: underline;
+  }
+
+  .main-cats > li > .Button-App {
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgba(77, 77, 77, 0.605);
+  }
+
+  .main-cats > li > .Button-App > i {
+    font-size: 60px;
+    margin-left: 0px;
+    margin-top: 17px;
+  }
+
+  .main-cats > li > .Button-App > img {
+    margin-left: -0px;
+    margin-top: 5px;
+  }
+
+  .Button-Html > i {
+    margin-left: -2px;
+  }
+
+  .Button-Css > i {
+    margin-left: 0px;
+  }
+
+  .Button-Main:hover {
+    background-color: rgba(165, 165, 165, 0.31);
+  }
+
+  .main-cats > li > .Button-Html:hover,
+  .main-cats > li > .Button-Html.active {
+    background-color: rgba(254, 68, 0, 0.769);
+  }
+
+  .main-cats > li > .Button-Css:hover,
+  .main-cats > li > .Button-Css.active {
+    background-color: rgba(0, 135, 254, 0.769);
+  }
+
+  .main-cats > li > .Button-Js:hover,
+  .main-cats > li > .Button-Js.active {
+    background-color: rgba(255, 234, 0, 0.899);
+  }
+
+  .main-cats > li > .Button-Php:hover,
+  .main-cats > li > .Button-Php.active {
+    background-color: rgba(203, 16, 175, 0.769);
+  }
+
+  .main-cats > li > .Button-React:hover,
+  .main-cats > li > .Button-React.active {
+    background-color: rgba(0, 229, 255, 0.769);
+  }
+
+  .main-cats > li > .Button-JQuery:hover,
+  .main-cats > li > .Button-JQuery.active {
+    background-color: rgba(237, 191, 5, 0.858);
+  }
+
+  .main-cats > li > .Button-Vue:hover,
+  .main-cats > li > .Button-Vue.active {
+    background-color: rgba(5, 237, 71, 0.769);
+  }
+
+  .main-cats > li > .Button-Php > i {
+    margin-left: -1.5px;
+  }
+
+  .main-cats > li > .Button-Electron:hover,
+  .main-cats > li > .Button-Electron.active {
+    background-color: rgba(9, 145, 93, 0.769);
+  }
+
+  .main-cats > li > .Button-AllCat:hover,
+  .main-cats > li > .Button-AllCat.active {
+    background-color: rgba(145, 9, 129, 0.769);
+  }
+
+  .main-cats > li > .Button-LangSug:hover,
+  .main-cats > li > .Button-LangSug.active {
+    background-color: rgba(233, 6, 6, 0.769);
+  }
+</style>
+<style>
+  li {
+    list-style: none;
+  }
+
+  li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: inline-block;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+  .main {
+    min-height: 100vh;
+    width: 110%;
+    background-color: rgb(50, 50, 50);
+    padding: 20px;
+    color: white;
+  }
+
+  .main-cats {
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    width: 90%;
+    gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  #catText {
+    color: white;
+    margin-left: -10%;
+  }
+
+  @keyframes Main {
+    from {
+      color: transparent;
+    }
+  }
+</style>

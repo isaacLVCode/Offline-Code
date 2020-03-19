@@ -1,0 +1,118 @@
+<div class="main">
+    <h3 class="text-center lead" id="pageHeader">HTML</h3>
+
+    <div class="main-page html">
+        <div class="text-center" id="pageHeaderSub">
+            Выберите категорию
+        </div>
+
+        <div class="content html">
+            <ul class="">
+                <li>Глобально</li>
+                <li><a href="#" id="allTagsHtmlPage">HTML Тэги</a></li>
+                <li><a href="#" id="allAttributesHtmlPage">HTML Аттрибуты</a></li>
+                <li><a href="#" id="allGlobalAttributesHtmlPage">HTML Глобальные Аттрибуты</a></li>
+                <li><a href="#" id="allColorsHtmlPage">HTML Цвета</a></li>
+                <li><a href="#" id="allLanguageCodesHtmlPage">HTML Коды языков</a></li>
+                <br><br>
+                <li>Прочее</li>
+                <li><a href="#" id="hyperlinksHtmlPage">HTML Ссылки</a></li>
+                <li><a href="#" id="imagesHtmlPage">HTML Изображения</a></li>
+                <li><a href="#" id="tablesHtmlPage">HTML Таблицы</a></li>
+                <li><a href="#" id="listsHtmlPage">HTML Списки</a></li>
+                <li><a href="#" id="symbolsHtmlPage">HTML Символи</a></li>
+                <li><a href="#" id="formsHtmlPage">HTML Формы</a></li>
+                <li><a href="#" id="inputTypesHtmlPage">HTML Виды Input</a></li>
+                <li><a href="#" id="inputAttributesHtmlPage">HTML Атрибуты Input</a></li>
+                <li><a href="#" id="canvasHtmlPage">HTML Canvas</a></li>
+                <br><br>
+                <li>Мультимедия</li>
+                <li><a href="#" id="videoHtmlPage">HTML Видео</a></li>
+                <li><a href="#" id="audioHtmlPage">HTML Аудио</a></li>
+                <li><a href="#" id="iframeHtmlPage">HTML iFrame (YouTube)</a></li>
+                <br><br>
+                <li><a href="#" id="contentFromW3SchoolsRedirect">Контент взят с W3Schools</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/redirects.js"></script>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+    .main {
+        min-height: 90vh;
+        max-width: 110%;
+        width: 110%;
+        background-color: rgb(50, 50, 50);
+        height: 100vh;
+        padding: 20px;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+
+    #pageHeader,
+    #pageHeaderSub {
+        color: white;
+        margin-left: -10%;
+    }
+
+    .content.html {
+        width: 87%;
+        height: 80vh;
+        background-color: rgb(22, 21, 24);
+        border-radius: 5px;
+        border: 2px solid rgb(57, 57, 57);
+        padding: 20px;
+    }
+
+    .content.html>ul {
+        list-style: none;
+        font-size: 15px;
+        max-height: 50%;
+    }
+
+    .content.html>ul>li {
+        display: inline;
+    }
+
+    .content.html>ul>li::after {
+        content: " | ";
+    }
+
+    .content.html>ul>li>a:hover {
+        text-decoration: underline;
+    }
+
+    .content.html>ul>li:nth-child(1)::after,
+    .content.html>ul>li:nth-child(9)::after,
+    .content.html>ul>li:nth-child(21)::after {
+        color: red;
+        content: " : ";
+
+    }
+
+    .content.html>ul>li:nth-child(1)::before,
+    .content.html>ul>li:nth-child(9)::before,
+    .content.html>ul>li:nth-child(21)::before {
+        color: white;
+        content: "• ";
+
+    }
+
+    .content.html>ul>li:nth-child(14)::after {
+        content: " 🔥 ";
+    }
+
+    .content.html>ul>li:nth-child(6)::after,
+    .content.html>ul>li:nth-child(18)::after,
+    .content.html>ul>li:nth-child(24)::after {
+        content: " ";
+    }
+
+    .content.html>ul>li:last-child::before,
+    .content.html>ul>li:last-child::after {
+        content: " == ";
+    }
+</style>

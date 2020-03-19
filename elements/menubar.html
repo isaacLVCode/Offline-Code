@@ -1,0 +1,82 @@
+<div class="wrappers top-bar">
+    <div class="close-btn" title="Закрыть" onclick="window.close()"></div>
+    <div class="minimize-btn" title="Свернут" id="minimize"></div>
+    <div class="fullscreen-btn" title="Полноэкранный режим" id="fullscreen"></div>
+</div>
+<style>
+    .wrappers.top-bar {
+        background-color: rgb(38, 36, 36);
+        padding-top: 1px;
+        padding-bottom: 1px;
+        -webkit-app-region: drag;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .close-btn {
+        height: 11px;
+        width: 11px;
+        margin-left: 10px;
+        background-color: rgb(213, 86, 86);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .close-btn:hover {
+        background-color: rgb(174, 69, 69);
+    }
+
+    .minimize-btn {
+        height: 11px;
+        width: 11px;
+        margin-left: 5px;
+        background-color: rgb(240, 214, 62);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .minimize-btn:hover {
+        background-color: rgb(194, 172, 49);
+    }
+
+    .fullscreen-btn {
+        height: 11px;
+        width: 11px;
+        margin-left: 5px;
+        background-color: rgb(76, 186, 46);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .fullscreen-btn:hover {
+        background-color: rgb(62, 152, 37);
+    }
+
+    .wrapper.top-bar::-moz-selection {
+        color: transparent;
+    }
+
+    .wrapper.top-bar::selection {
+        color: transparent;
+    }
+</style>
+<script>
+    const $ = require('jquery')
+    const {
+        remote
+    } = require('electron')
+
+    var mainWindow = remote.getCurrentWindow()
+
+    $('#minimize').click(function () {
+        mainWindow.minimize()
+    })
+
+    $('#fullscreen').click(function () {
+        if (!mainWindow.isMaximized()) {
+            mainWindow.maximize()
+        } else {
+            mainWindow.unmaximize()
+        }
+    })
+</script>
