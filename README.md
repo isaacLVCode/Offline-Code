@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Offline Code
 
 Offline Code Это open-source приложение.
